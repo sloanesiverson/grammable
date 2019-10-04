@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-   before_action :authenticate_user!, only: [:create]
+  before_action :authenticate_user!, only: [:create]
 
   def create
     @gram = Gram.find_by_id(params[:gram_id])
@@ -11,9 +11,6 @@ class CommentsController < ApplicationController
 
   private
 
-  def render_not_found(status=:not_found)
-    render plain: "#{status.to_s.titleize} :(", status: status
-  end
 
   def comment_params
     params.require(:comment).permit(:message)
