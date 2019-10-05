@@ -63,7 +63,7 @@ RSpec.describe GramsController, type: :controller do
 
     it "should have http 404 error if the gram cannot be found" do
         user = FactoryBot.create(:user)
-      sign_in user
+        sign_in user
       
       patch :update, params: { id: "YOLOSWAG", gram: { message: 'Changed' } }
       expect(response).to have_http_status(:not_found)
