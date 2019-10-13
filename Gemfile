@@ -65,8 +65,8 @@ group :development, :test do
   gem 'factory_bot_rails'
 end
 gem 'jquery-rails'
-gem 'popper_js', '~> 1.11.1'
-gem 'bootstrap', '4.0.0.alpha6'
+gem 'popper_js', '>= 1.14.3'
+gem "bootstrap", ">= 4.3.1"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
