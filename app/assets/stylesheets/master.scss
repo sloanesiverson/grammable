@@ -107,6 +107,8 @@ input {
   font-size: 18px;
 }
 
-.gram-actions .float-right {
-float: right;
+.float-right {
+    float: right !important;
+
+  margin-left: auto !important;
 }
